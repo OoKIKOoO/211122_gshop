@@ -1,10 +1,7 @@
 // ajax请求函数模块
 // 返回值：promise对象(异步返回的值是reponse.data)
 import axios from 'axios'
-import { response } from 'express'
-export default function ajax(url, data={}, type='Get'){
-
-
+export default function ajax(url, data={}, type='GET'){
   return new Promise(function(resolve, reject){
     let promise
     if(type === 'GET'){
@@ -24,15 +21,10 @@ export default function ajax(url, data={}, type='Get'){
       promise = axios.post(url, data)
     }
 
-    promise.then(function(reponse){
+    promise.then(function(response){
       resolve(response.data)
     }).catch(function(error){
       reject(error)
     })
   })
-
-
-  
-
-  return promise
 }

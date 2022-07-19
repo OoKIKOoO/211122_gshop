@@ -21,7 +21,7 @@ section, summary, time, mark, audio, video, input {
 
 /* HTML5 display-role reset for older browsers */
 
-
+* { touch-action: pan-y; }
 
 article, aside, details, figcaption, figure, footer,
 header, menu, nav, section {

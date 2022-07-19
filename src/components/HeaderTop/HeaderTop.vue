@@ -34,6 +34,7 @@ export default {
     transform translateY(-50%)
     width 10%
     height 50%
+    text-decoration none
     .icon-sousuo
       font-size 25px
       color #fff
@@ -56,6 +57,7 @@ export default {
     right 15px
     top 50%
     transform translateY(-50%)
+    text-decoration none
     .header_login_text
       color #fff
 </style>
